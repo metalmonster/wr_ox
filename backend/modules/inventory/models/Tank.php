@@ -39,7 +39,8 @@ class Tank extends \yii\db\ActiveRecord
             [['gas_id', 'unit_id'], 'integer'],
             [['year_check', 'date_modify'], 'safe'],
             [['tankno'], 'string', 'max' => 20],
-            [['vol'], 'string', 'max' => 10]
+            [['vol'], 'string', 'max' => 10],
+            [['tankno'], 'unique']
         ];
     }
 
